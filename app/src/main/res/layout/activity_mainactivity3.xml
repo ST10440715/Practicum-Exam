@@ -105,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="95dp"
             android:backgroundTint="#2B71A8"
-            android:text="Avarage" />
+            android:text="Average" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,7 +115,7 @@
             <TextView
                 android:id="@+id/tvAvg"
                 android:layout_width="1dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/titan_one"
                 android:text="Average Temperature" />
@@ -123,7 +123,7 @@
             <TextView
                 android:id="@+id/tvAverage"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="TextView" />
 
