@@ -4,15 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#65B2D5"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="587dp"
+        android:backgroundTint="#6BADCC"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:background="#1590C8"
+            android:fontFamily="@font/titan_one"
+            android:text="C  l  o  u  d  M o o d s"
+            android:textSize="77sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="397dp"
+            android:background="#69B4EF"
+            tools:srcCompat="@drawable/weather_app" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#073357"
+        android:text="MAIN"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#2196F3"
+        android:text="EXIT"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="93dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="637dp">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:fontFamily="@font/cabin_semibold"
+            android:inputType="text"
+            android:text="Naledi Musa Nxumalo ST10440715" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
